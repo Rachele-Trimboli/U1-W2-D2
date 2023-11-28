@@ -57,11 +57,13 @@ if(number1 === 8 || number2 === 8 || number1 + number2 === 8 || number1 - number
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart = 55
+let totalShoppingCart = 20
+let shipping = 10
 if(totalShoppingCart > 50){
   console.log("Spedizione gratuita")
 }else{
-  console.log("Costo spedizione 10 euro")
+  totalShoppingCart = totalShoppingCart + shipping
+  console.log("Il totale è" + " " + totalShoppingCart )
 }
 
 
@@ -139,6 +141,15 @@ if (val < 10 && val > 5) {
   } else {
     console.log("Uguale a 10 o maggiore");
   }
+  // oppure
+  // let val = 7
+// if (val > 5) {
+//   console.log("Meno di 10");
+// }else if (val < 10) {
+//   console.log("Meno di 10");
+// } else {
+//   console.log("Uguale a 10 o maggiore");
+// }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
