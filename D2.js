@@ -74,10 +74,11 @@ if(totalShoppingCart > 50){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let discount = (totalShoppingCart * 20) / 100
-if(totalShoppingCart - discount > 50){
+let total = totalShoppingCart - discount
+if(total > 50){
   console.log("Spedizione gratis")
 }else{
-  console.log("Costo spedizione 10 euro")
+  console.log("Costo spedizione 10 euro e il totale è" + " " + total)
 }
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
